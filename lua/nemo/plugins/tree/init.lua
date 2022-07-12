@@ -8,4 +8,7 @@ G.on_require("nvim-tree", function (tree)
       group_empty = true,
     },
   }
+
+  -- Mappings
+  require("nemo.mappings.tree").apply()
 end)

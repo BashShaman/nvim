@@ -1,6 +1,5 @@
 G.on_require("telescope", function (telescope)
   local state = require('telescope.actions.state')
-  local layout = require('telescope.actions.layout')
 
   telescope.setup {
     defaults = {
@@ -35,6 +34,9 @@ G.on_require("telescope", function (telescope)
     }
   }
 
+  -- Mappings
+  require("nemo.mappings.telescope").apply()
+  -- Extensions
   telescope.load_extension('fzf')
   telescope.load_extension('ui-select')
 end)

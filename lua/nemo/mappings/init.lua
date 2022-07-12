@@ -97,10 +97,6 @@ vim.keymap.set("n", "<C-k>", "<cmd>cprevious<cr>", opts)
 -- Neovim related
 vim.keymap.set("n", "<leader><leader>t", "<plug>PlenaryTestFile")
 
--- Telescope
-require("nemo.mappings.telescope").apply()
-require("nemo.mappings.tree").apply()
-
 -- Playing
 -- Surround a word under the cursor or selected text
 vim.keymap.set("n", [[<leader>"]],
